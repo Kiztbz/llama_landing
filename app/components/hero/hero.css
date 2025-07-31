@@ -75,7 +75,7 @@
 
 @media (max-width: 1024px) {
     .heroblock {
-        width: 85%;
+        width: 100%;
         margin-top: 0px;
         align-items: center;
         flex-direction: column-reverse;

@@ -50,7 +50,7 @@
 
 @media (max-width: 1024px) {
     .membership-perks{
-        width: 85%;
+        width: 100%;
     }
     .perkcontainer{
         display: grid;
@@ -58,6 +58,7 @@
         margin-top: 30px;
     }
     .perk{
+        flex-direction: row;
         width: 150px;
         height: 150px;
         margin: 10px auto;

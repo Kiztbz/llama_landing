@@ -6,6 +6,7 @@ export default function About_landing() {
   return (
     <div className="main about_landing">
       <h2>What is LLAMA LLC?</h2>
+      <div className="about-content">
       <p>
         Turn knowledge into lasting memory. With Alpaca, you can capture notes,
         organize ideas, and build custom quizzes—all in one place. Whether
@@ -27,11 +28,7 @@ export default function About_landing() {
           layout="intrinsic"
           alt="Alpaca interface"
         />
-        <Image
-          src={galleryImg}
-          layout="intrinsic"
-          alt="Alpaca interface"
-        />
+      </div>
       </div>
     </div>
   );
