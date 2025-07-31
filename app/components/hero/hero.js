@@ -19,6 +19,7 @@ export default function Hero() {
         <a href="https://alpaca.llamacoop.dev/" target="_blank">
           Try Alpaca
         </a>
+        <div className="tag"><a href="https://alpaca.llamacoop.dev/">Get Early Access Now</a></div>
       </div>
     </div>
   );

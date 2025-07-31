@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 75%;
+    width: 65%;
     margin: 0px auto;
 }
 
@@ -13,7 +13,6 @@
     width: 100%;
     margin: auto;
     justify-content: space-between;
-    color: var(--background);
 }
 
 .perk {
@@ -23,7 +22,7 @@
     padding: 1rem;
     width: 200px;
     height: 200px;
-    background-color: #0f172a;
+    background-color: #0f172a4b;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
@@ -31,6 +30,10 @@
     font-size: 1.5rem;
     font-weight: bolder;
     flex-direction: column;
+}
+
+.perk img{
+    filter: invert(100%);
 }
 
 .perk h3{
@@ -43,6 +46,7 @@
     font-size: 30px;
     font-weight: 700;
 }
+
 
 @media (max-width: 1024px) {
     .membership-perks{

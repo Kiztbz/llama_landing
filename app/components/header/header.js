@@ -3,6 +3,7 @@ import HamburgerMenu from "../hamburger/hamburger";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/images/logo.svg";
+import Marquee from "../marquee/marquee";
 
 function Profile() {
   return <Image src={logo} alt="LLAMA LLC Logo" />;
@@ -11,6 +12,8 @@ function Profile() {
 export default function Header() {
   return (
     <header className="main header">
+      <Marquee text="🚀 Welcome to the React Marquee Component! Stay tuned for updates. 🔔" />
+      <div className="header-components">
       <Link href="/" className="logo">
         <Profile />
       </Link>
@@ -24,6 +27,7 @@ export default function Header() {
         </Link> */}
       </div>
       <HamburgerMenu />
+      </div>
     </header>
   );
 }

@@ -8,6 +8,9 @@ export default function Contribute() {
       <div className="contrisvg">
         <Image src={alpacainterface} alt="Alpaca interface"></Image>
       </div>
+      <div>
+        
+      </div>
       <div className="contribute_info">
         <h1>Contribute Now</h1>
         <p>
@@ -18,7 +21,7 @@ export default function Contribute() {
           everywhere.
         </p>
         <div className="contribute_btns">
-          <a href="https://buy.stripe.com/3cI5kD4om7hi4kL885aVa00">
+          <a href="https://gofund.me/61758f41">
             Donate
           </a>
           <a href="https://alpaca.llamacoop.dev/" target="_blank">

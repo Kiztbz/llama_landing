@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function MembershipPage() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main}> 
       <h2>Membership</h2>
       <p>
         At Learning, Language, and Multicultural Advancement, membership means

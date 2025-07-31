@@ -36,6 +36,15 @@
     height: 100%;
 }
 
+.tag{
+    background-color: rgb(36, 193, 36);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 0px !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .info * {
     margin: 15px 0px;
 }

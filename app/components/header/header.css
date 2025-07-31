@@ -1,9 +1,15 @@
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 100px;
+}
+
+.header-components {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .logo img {
@@ -11,8 +17,8 @@
     height: 80px;
 }
 
-.logo{
-    width: 50%;
+.logo {
+    width: 30%;
 }
 
 .nav-links {
@@ -51,7 +57,20 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: 150px;
+    }
+
     .nav-links {
         display: none;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 120px;
     }
 }
