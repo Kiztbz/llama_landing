@@ -9,7 +9,7 @@ export default function Hero() {
         <Image src={heroimg} layout="intrinsic" alt="Alpaca interface"></Image>
       </div>
       <div className="info">
-        <h1>Alpaca Now Open!</h1>
+        <h1>Alpaca : The new way of learning!</h1>
         <p>
           Turn knowledge into lasting memory. With Alpaca, you can capture
           notes, organize ideas, and build custom quizzes—all in one place.

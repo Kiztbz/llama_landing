@@ -86,3 +86,12 @@ ul.checkboxList input[type="text"] {
   margin-right: 0.25rem;
   border-radius: 8px;
 }
+
+
+/*MOBILE VIEW*/
+@media (max-width: 1024px) {
+  .form{
+    width: 100% !important;
+    margin: 0px;
+  }
+}

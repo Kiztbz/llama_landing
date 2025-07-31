@@ -101,10 +101,10 @@ export default function CareersPage() {
             <p>
               <span className={styles.card_bold}>Location: </span>
               {opp.location}
-            </p>
-            <p>
+              <br></br>
               <span className={styles.card_bold}>Duration: </span>
               {opp.duration}
+              <br></br>
             </p>
             <p className={styles.card_bold}>Requirements</p>
             <ul>

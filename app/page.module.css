@@ -131,13 +131,22 @@ a.secondary {
   margin: 50px auto 100px auto;
 }
 
+.cardPage h2{
+  font-size: 30px;
+}
+
+.cardPage h3{
+  font-size: 20px;
+}
+
 .cardPage h2, .cardPage h3 {
   text-align: center;
+
 }
 
 .cardPage h4 {
   font-size: 26px;
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .cardPage p {
@@ -155,8 +164,7 @@ a.secondary {
 }
 
 .card {
-  width: 330px;
-  height: 580px;
+  width: 500px;
   padding: 20px;
   border-radius: 8px;
   background-color: var(--color1);
@@ -171,9 +179,6 @@ a.secondary {
   display: none;
 }
 
-.card * {
-  margin: auto;
-}
 
 .card p {
   font-size: 14px;
@@ -248,16 +253,6 @@ a.secondary {
   margin-top: 10px;
 }
 
-
-/*MOBILE VIEW*/
-@media (max-width: 1024px) {
-  .boxContainer ul {
-      flex-direction: column;
-    }
-        .boxContainer ul li {
-          width: 100%;
-}
-}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -334,4 +329,20 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+/*MOBILE VIEW*/
+@media (max-width: 1024px) {
+  .boxContainer ul {
+    flex-direction: column;
+  }
+
+  .boxContainer ul li {
+    width: 100%;
+  }
+
+  .postPara {
+    width: 100% !important;
+  }
+  
 }
