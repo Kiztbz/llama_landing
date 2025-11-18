@@ -13,9 +13,8 @@ export default function CareersPage() {
       location: "Remote",
       duration: "One month",
       requirements: [
-        "Basic knowledge of JavaScript",
-        "Willingness to learn",
-        "Previous projects to show",
+        "Basic JS",
+        "Portfolio Projects"
       ],
       description:
         "Want to jump in on an important open source project, learn how to work with groups, and have verifiable experience? This is a great opportunity to show off just how skilled you are with coding and pick up some more skills along the way!",
@@ -25,50 +24,23 @@ export default function CareersPage() {
       location: "Remote",
       duration: "One month",
       requirements: [
-        "Ability to communicate in English or Hindi",
-        "Willingness to learn",
-        "Persistance and perseverance with problem solving",
-        "No experience or programming knowledge necessary",
+        "Basic JS",
+        "Portfolio Projects"
       ],
       description:
-        "Thought about programming but did not want to learn it on your own? Here's an opportunity to learn the basics while helping create learning resources for yourself and others. You will be working with one or more mentors who will talk you through some of the basics. We will help you go from zero to contributing to an open source project. All the while, you will be using and contributing to learning materials.",
+        "Want to jump in on an important open source project, learn how to work with groups, and have verifiable experience? This is a great opportunity to show off just how skilled you are with coding and pick up some more skills along the way!",
     },
     {
       title: "Subcontractor on Reserve",
       location: "Remote",
       duration: "One year",
       requirements: [
-        "Verifiable skills in programming",
-        "Willingness to adhere to our coding standards",
-        "Good communication skills and positive attitude",
+        "3+ years",
+        "Advance JS"
       ],
       description:
         "We are preparing to market to people who want custom coding. On occasion, our current members will not have time to meet the project goals by deadline. This is your chance to take some of the money earned for the project in exchange for helping us to finish on deadline.",
-    },
-    {
-      title: "Something Special to Offer",
-      location: "Remote",
-      duration: "To be determined",
-      requirements: [
-        "Verifiable skills in programming",
-        "Willingness to adhere to our coding standards",
-        "Good communication skills and positive attitude",
-      ],
-      description:
-        "Do you think you know something we don't, but we should? You might be right! Put in your pitch, and we'll hear you out.",
-    },
-    {
-      title: "Sales",
-      location: "Remote",
-      duration: "6 months",
-      requirements: [
-        "Commitment to honesty and integrity",
-        "Ability to learn and explain our products and services",
-        "Ability to seek genuine prospects with a product and service that is in their interest",
-      ],
-      description:
-        "Good products and services still don't sell themselves! For a limited time only, we are offering a generous 40% commission on some of our products and services that have not yet been widely promoted.",
-    },
+    }
   ];
 
   return (
@@ -98,21 +70,20 @@ export default function CareersPage() {
         {opportunities.map((opp) => (
           <div className={`${styles.card}`} key={opp.title}>
             <h4>{opp.title}</h4>
-            <p>
-              <span className={styles.card_bold}>Location: </span>
-              {opp.location}
-              <br></br>
-              <span className={styles.card_bold}>Duration: </span>
-              {opp.duration}
-              <br></br>
+            <p className={styles.tags}>
+              <span className={styles.card_bold}>{opp.location}</span>
+              <span className={styles.card_bold}>{opp.duration}</span>
             </p>
-            <p className={styles.card_bold}>Requirements</p>
-            <ul>
+            {/* <p className={styles.card_bold}>Requirements</p> */}
+            <ul className={styles.reqs}>
+              <span>Requirements : </span>
+              <br></br>
               {opp.requirements.map((req) => (
                 <li key={req}>{req}</li>
               ))}
             </ul>
             <p className={styles.card_desc}>{opp.description}</p>
+            <button>Apply Now</button>
           </div>
         ))}
       </div>

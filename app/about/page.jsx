@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} ${styles.main2}`}>
       <h2>About Us</h2>
       <p>
         We are a democratically-run web development company founded in March

@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} ${styles.main2}`}>
       <div className={styles.boxContainer}>
       <h2>We want to hear from you!</h2>
       <ul>

@@ -34,7 +34,11 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
-  margin: 2rem;
+  margin: 2rem auto;
+}
+
+.main2{
+    width: 60%; 
 }
 
 .main ol {
@@ -57,6 +61,45 @@
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
+}
+
+.tags{
+  display: flex;
+}
+
+.tags span{
+  background-color: #10b981;
+  padding: 5px;
+  border-radius: 8px;
+  margin: auto 2px;
+}
+
+.reqs{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+  list-style: none;
+  margin: 10px auto;
+}
+
+.reqs span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.reqs li{
+  background-color: #10b981;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 0px 2px;
+}
+
+.card button{
+  width: 85%;
+  margin: auto;
 }
 
 .ctas {
@@ -147,10 +190,11 @@ a.secondary {
 .cardPage h4 {
   font-size: 26px;
   margin: 20px auto;
+  text-align: center;
 }
 
 .cardPage p {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
@@ -165,7 +209,7 @@ a.secondary {
 
 .card {
   width: 500px;
-  padding: 20px;
+  padding: 20px 0px;
   border-radius: 8px;
   background-color: var(--color1);
   text-align: left;
@@ -185,10 +229,7 @@ a.secondary {
 }
 
 .card ul {
-  list-style-type:decimal;
-  margin-top: 20px;
-  width: 80%;
-  margin: 20px auto;
+  width: 85%;
 }
 
 .card_bold, p.card_bold {
@@ -236,17 +277,18 @@ a.secondary {
 .boxContainer ul{
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 .boxContainer ul li{
-  width: 250px;
+  width: 220px;
   background-color: var(--color1);
   color: var(--background);
   list-style: none;
-  padding: 20px;
+  padding: 15px 10px;
   border-radius: 8px;
+  font-weight: 600;
 }
 
 .boxContainer p {
@@ -344,5 +386,22 @@ a.secondary {
   .postPara {
     width: 100% !important;
   }
+
+  .tags{
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .reqs {
+    flex-wrap: wrap;
+  }
   
+  .reqs span{
+    width: 100%;
+  }
+
+  .cardPage p{
+    width: 80%;
+    margin: auto;
+  }
 }
