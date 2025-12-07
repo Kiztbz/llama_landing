@@ -1,5 +1,6 @@
 import styles from "../page.module.css";
 import WorkApplication from "./workApplication";
+import ApplyButton from "../components/apply_button/ApplyButton";
 
 export const metadata = {
   title: "Careers | LLAMA",
@@ -83,11 +84,11 @@ export default function CareersPage() {
               ))}
             </ul>
             <p className={styles.card_desc}>{opp.description}</p>
-            <button>Apply Now</button>
+            <ApplyButton />
           </div>
         ))}
       </div>
-      <p className={styles.postPara}>
+      <p className={styles.postPara} id="apply">
         Even if your background doesn’t fall into one of those areas, we still
         encourage you to apply. We grow through collaboration and shared
         purpose.The most important thing for our company is persistance, endurance, and
