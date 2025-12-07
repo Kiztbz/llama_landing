@@ -20,7 +20,7 @@
     display: none;
 }
 
-.mainsvg::slid .mainsvg img {
+.mainsvg .mainsvg img {
     width: 100%;
     height: auto;
     display: block;
