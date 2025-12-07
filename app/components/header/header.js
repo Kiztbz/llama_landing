@@ -12,7 +12,7 @@ function Profile() {
 export default function Header() {
   return (
     <header className="main header">
-      <Marquee text="🚀 Welcome to the React Marquee Component! Stay tuned for updates. 🔔" />
+      <a href="/careers" alt="Careers at LLAMA LLC"><Marquee text="🚀 Now Accepting Interns! Go to careers page to know more. 🔔" /></a>
       <div className="header-components">
       <Link href="/" className="logo">
         <Profile />
