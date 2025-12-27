@@ -17,11 +17,10 @@ export default function WorkApplication({ opportunities }) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     try {
       setSent(true);
-      const response = await fetch(apiUrl + "/careers", {
+      const response = await fetch("/api/careers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -34,6 +33,8 @@ export default function WorkApplication({ opportunities }) {
           about,
         }),
       });
+
+
 
       if (response.ok) {
         setReceived(true);
