@@ -12,35 +12,27 @@ export default function CareersPage() {
     {
       title: "Intern JS Developer",
       location: "Remote",
-      duration: "One month",
+      duration: "3 months",
       requirements: [
-        "Basic JS",
-        "Portfolio Projects"
+        "React Basics",
+        "Node & Express",
+        "Maria DB",
+        "Github"
       ],
       description:
-        "Want to jump in on an important open source project, learn how to work with groups, and have verifiable experience? This is a great opportunity to show off just how skilled you are with coding and pick up some more skills along the way!",
-    },
-    {
-      title: "Student for Mentorship",
-      location: "Remote",
-      duration: "One month",
-      requirements: [
-        "Basic JS",
-        "Portfolio Projects"
-      ],
-      description:
-        "Want to jump in on an important open source project, learn how to work with groups, and have verifiable experience? This is a great opportunity to show off just how skilled you are with coding and pick up some more skills along the way!",
+        "Want to work on real-world web applications, learn how full-stack systems are built, and gain verified experience? This internship lets you collaborate with a passionate team, contribute to live projects, and sharpen your MERN development skills while building strong portfolio work!",
     },
     {
       title: "Subcontractor on Reserve",
       location: "Remote",
-      duration: "One year",
+      duration: "On-Call",
       requirements: [
-        "3+ years",
-        "Advance JS"
+        "Experience Required",
+        "Portfolio / Proof of Work",
+        "Reliable Communication"
       ],
       description:
-        "We are preparing to market to people who want custom coding. On occasion, our current members will not have time to meet the project goals by deadline. This is your chance to take some of the money earned for the project in exchange for helping us to finish on deadline.",
+        "Join our reserve pool of talented tech professionals and get onboarded for projects whenever opportunities match your skills. You’ll work on meaningful assignments, deliver quality results, and be compensated per project — great for freelancers, part-timers, and experts wanting flexible work!",
     }
   ];
 
@@ -78,10 +70,11 @@ export default function CareersPage() {
             {/* <p className={styles.card_bold}>Requirements</p> */}
             <ul className={styles.reqs}>
               <span>Requirements : </span>
-              <br></br>
+              <div className={styles.reqsli}>
               {opp.requirements.map((req) => (
                 <li key={req}>{req}</li>
               ))}
+              </div>
             </ul>
             <p className={styles.card_desc}>{opp.description}</p>
             <ApplyButton />

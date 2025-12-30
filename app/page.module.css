@@ -37,8 +37,8 @@
   margin: 2rem auto;
 }
 
-.main2{
-    width: 60%; 
+.main2 {
+  width: 60%;
 }
 
 .main ol {
@@ -63,41 +63,49 @@
   font-weight: 600;
 }
 
-.tags{
+.tags {
   display: flex;
 }
 
-.tags span{
+.tags span {
   background-color: #10b981;
   padding: 5px;
   border-radius: 8px;
   margin: auto 2px;
 }
 
-.reqs{
+.reqs {
   display: flex;
   align-items: flex-start;
-  justify-content:flex-start;
+  justify-content: flex-start;
   list-style: none;
   margin: 10px auto;
+  flex-direction: column;
 }
 
-.reqs span{
+.reqs span {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
   font-weight: 600;
+  margin-right: auto;
 }
 
-.reqs li{
+.reqsli{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reqsli li {
   background-color: #10b981;
   padding: 5px;
   border-radius: 8px;
   margin: 0px 2px;
+  height: 28px;
 }
 
-.card button{
+.card button {
   width: 85%;
   margin: auto;
 }
@@ -174,15 +182,16 @@ a.secondary {
   margin: 50px auto 100px auto;
 }
 
-.cardPage h2{
+.cardPage h2 {
   font-size: 30px;
 }
 
-.cardPage h3{
+.cardPage h3 {
   font-size: 20px;
 }
 
-.cardPage h2, .cardPage h3 {
+.cardPage h2,
+.cardPage h3 {
   text-align: center;
 
 }
@@ -219,7 +228,7 @@ a.secondary {
   margin: 15px;
 }
 
-.card::-webkit-scrollbar{
+.card::-webkit-scrollbar {
   display: none;
 }
 
@@ -232,7 +241,8 @@ a.secondary {
   width: 85%;
 }
 
-.card_bold, p.card_bold {
+.card_bold,
+p.card_bold {
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -240,7 +250,7 @@ a.secondary {
 .card_desc {
   margin-top: 1rem;
 }
-  
+
 .card button {
   padding: 5px 15px;
   background-color: var(--background);
@@ -259,29 +269,30 @@ a.secondary {
   font-size: 16px;
 }
 
-.postPara{
+.postPara {
   width: 60% !important;
   margin: 50px auto 20px auto !important;
 }
 
-.boxContainer{
+.boxContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
 }
-.boxContainer h2{
+
+.boxContainer h2 {
   margin-bottom: 30px;
 }
 
-.boxContainer ul{
+.boxContainer ul {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   margin: auto;
 }
 
-.boxContainer ul li{
+.boxContainer ul li {
   width: 220px;
   background-color: var(--color1);
   color: var(--background);
@@ -326,21 +337,21 @@ a.secondary {
     width: 80%;
   }
 
-    .cardPage p {
-      width: 100%;
-    }
+  .cardPage p {
+    width: 100%;
+  }
 
-    .cards{
-      width: 100%;
-    }
+  .cards {
+    width: 100%;
+  }
 
-        .card {
-          margin: 10px auto;
-        }
-        
-                .postPara {
-                  width: 80% !important;
-                }
+  .card {
+    margin: 10px auto;
+  }
+
+  .postPara {
+    width: 80% !important;
+  }
 
   .main ol {
     text-align: center;
@@ -387,7 +398,7 @@ a.secondary {
     width: 100% !important;
   }
 
-  .tags{
+  .tags {
     width: 80% !important;
     margin: auto !important;
   }
@@ -395,12 +406,8 @@ a.secondary {
   .reqs {
     flex-wrap: wrap;
   }
-  
-  .reqs span{
-    width: 100%;
-  }
 
-  .cardPage p{
+  .cardPage p {
     width: 80%;
     margin: auto;
   }
