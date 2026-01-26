@@ -10,7 +10,7 @@ export const metadata = {
 export default function CareersPage() {
   const opportunities = [
     {
-      title: "Intern JS Developer",
+      title: "Intern Fullstack Developer",
       location: "Remote",
       duration: "3 months",
       requirements: [
