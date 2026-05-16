@@ -1,16 +1,22 @@
 .marquee-container {
     width: 100%;
     white-space: nowrap;
-    background-color: #0f172a;
-    height: 25px;
+    overflow: hidden;
+    background: #1e3a5f;
+    height: 28px;
+    display: flex;
+    align-items: center;
 }
 
 .marquee {
     display: inline-block;
     padding-left: 100%;
-    animation: marquee 15s linear infinite;
-    font-size: 16px;
-    color: white;
+    animation: marquee 22s linear infinite;
+    font-size: 12px;
+    font-weight: 600;
+    color: #bfdbfe;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 @keyframes marquee {

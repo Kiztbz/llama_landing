@@ -1,8 +1,9 @@
 import styles from "../page.module.css";
 
 export const metadata = {
-  title: "Projects | LLAMA",
-  description: "Work opportunities in our company",
+  title: "Projects | LLAMA LLC",
+  description: "Explore the projects built by LLAMA LLC — including Alpaca, an educational platform designed to make learning more engaging and accessible.",
+  alternates: { canonical: "https://llamacoop.dev/projects" },
 };
 
 export default function ProjectsPage() {

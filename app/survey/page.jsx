@@ -1,6 +1,12 @@
 import styles from "../page.module.css";
 import Survey from "./survey";
 
+export const metadata = {
+  title: "Alpaca Market Research Survey | LLAMA LLC",
+  description: "Share your feedback on learning apps and help shape the development of Alpaca, LLAMA LLC's educational platform.",
+  robots: { index: false, follow: false },
+};
+
 export default function SurveyPage() {
   return (
     <main className={styles.main}>

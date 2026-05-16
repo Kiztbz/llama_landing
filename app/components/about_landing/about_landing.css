@@ -1,55 +1,118 @@
 .about_landing {
-    width: var(--default_div_width);
-    margin: 80px auto;
+    width: 88%;
+    max-width: 1200px;
+    margin: 0 auto 80px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    gap: 24px;
+}
+
+.about_label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #2563eb;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 4px;
+    padding: 4px 10px;
+    width: fit-content;
+}
+
+.about_landing h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
 }
 
 .about-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
     align-items: center;
 }
 
 .about-content p {
-    width: 50%;
-    font-weight: 500;
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.8;
+    font-weight: 400;
+    padding-left: 18px;
+    border-left: 3px solid #bfdbfe;
 }
-
-.about_landing h2 {
-    font-size: var(--heading_size1);
-    margin-bottom: 20px;
-}
-
 
 .about_gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    position: relative;
 }
 
-.about_gallery img {
-    width: 35%;
-    margin: auto;
-    border-radius: 8px;
+.about_galleryImg {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.12);
+    display: block;
+}
+
+.about_accentCard {
+    background: #0f172a;
+    border-radius: 14px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #1e293b;
+}
+
+.about_accentRow {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.about_accentRow:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.about_accentStat {
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about_accentLabel {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 @media (max-width: 1024px) {
     .about_landing {
         width: 100%;
+        padding: 0 24px;
     }
 
     .about-content {
-        flex-direction: column;
-        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 28px;
     }
 
-    .about-content p {
-        width: 100%;
+    .about_accentRow {
+        flex-direction: row;
     }
-
-        .about_gallery img {
-            width: 45%;
-        }
 }

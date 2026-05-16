@@ -1,100 +1,305 @@
+/* ===== Hero Entrance Keyframes ===== */
+@keyframes browserEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes infoEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes browserfloat {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* ===== Hero Wrapper ===== */
+.heroWrapper {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(155deg, #eef4ff 0%, #ffffff 45%, #f5f3ff 100%);
+    padding-bottom: 16px;
+}
+
+.heroOrb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(72px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heroOrbA {
+    width: 640px;
+    height: 640px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.13) 0%, transparent 70%);
+    top: -200px;
+    left: -160px;
+}
+
+.heroOrbB {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+    bottom: -140px;
+    right: -120px;
+}
+
+/* ===== Browser Float Wrapper ===== */
+.browserFloat {
+    width: 48%;
+    min-width: 340px;
+    animation: browserfloat 7s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== Gradient Accent Word ===== */
+.gradientWord {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .heroblock {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
+    width: 88%;
+    max-width: 1200px;
+    margin: 72px auto 80px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    gap: 48px;
+    position: relative;
+    z-index: 1;
 }
 
-.mainsvg {
-    width: 50%;
-    min-width: 400px;
-    height: 300px;
-    overflow-y: auto;
-    border-radius: 8px;
+.browserChrome {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 24px 64px rgba(15, 23, 42, 0.16);
+    overflow: hidden;
+    animation: browserEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.mainsvg::-webkit-scrollbar {
-    display: none;
+.browserBar {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.mainsvg .mainsvg img {
+.browserDots {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.browserDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.browserDot:nth-child(1) {
+    background: #ff5f57;
+}
+
+.browserDot:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.browserDot:nth-child(3) {
+    background: #27c840;
+}
+
+.browserUrl {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    color: #64748b;
+    font-family: "Courier New", monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.browserLive {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #22c55e;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 4px;
+    padding: 2px 7px;
+    flex-shrink: 0;
+}
+
+.browserContent img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin: auto;
-    align-items: start;
-    height: 100%;
+    width: 45%;
+    gap: 20px;
+    animation: infoEntrance 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    position: relative;
+    z-index: 1;
 }
 
-.tag{
-    background-color: rgb(36, 193, 36);
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 0px !important;
-    font-weight: 600;
-    font-size: 14px;
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    width: fit-content;
 }
 
-.info * {
-    margin: 15px 0px;
+.tag::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #22c55e;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.25);
 }
 
 .info h1 {
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 0.05px;
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
 }
 
 .info p {
-    font-size: 17px;
-    font-weight: 500;
-    text-align: left;
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+.heroCtas {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .info a {
-    background-color: #0f172a;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f172a;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+    width: fit-content;
 }
 
 .info a:hover {
-    padding: 10px 30px;
+    background: #2563eb;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+    transform: translateY(-1px);
+}
+
+.info a.secondary {
+    background: transparent;
+    color: #0f172a;
+    border: 1.5px solid #d1d5db;
+}
+
+.info a.secondary:hover {
+    background: #f1f5f9;
+    box-shadow: none;
+    border-color: #94a3b8;
+}
+
+/* ---- Feature chips ---- */
+.heroFeatureChips {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.heroChip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.heroChip svg {
+    color: #2563eb;
+    flex-shrink: 0;
 }
 
 @media (max-width: 1024px) {
     .heroblock {
         width: 100%;
-        margin-top: 0px;
-        align-items: center;
+        margin: 0;
+        padding: 48px 24px;
         flex-direction: column-reverse;
+        gap: 32px;
     }
 
-    .mainsvg {
+    .browserFloat {
         width: 100%;
-        min-width: 200px;
-        height: 60%;
-    }
-
-    .mainsvg img {
-        width: 100%;
+        min-width: unset;
     }
 
     .info {
         width: 100%;
-        height: 60%;
-        align-items: center;
     }
 }

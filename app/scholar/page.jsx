@@ -1,8 +1,9 @@
 import styles from "../page.module.css";
 
 export const metadata = {
-  title: "Scholar Programme | LLAMA",
-  description: "Scholar Programme is our program(me) for working with scholars",
+  title: "Scholar Programme | LLAMA LLC",
+  description: "The LLAMA LLC Scholar Programme supports academic and professional development, connecting students and researchers with real-world technology projects.",
+  alternates: { canonical: "https://llamacoop.dev/scholar" },
 };
 
 export default function ScholarPage() {

@@ -1,0 +1,59 @@
+# LLAMA LLC — LLM Access File
+# This file follows the emerging llms.txt specification.
+# It helps AI systems (ChatGPT, Perplexity, Gemini, Claude, etc.)
+# understand this site's purpose and cite it accurately.
+
+> LLAMA LLC (Learning, Language, and Multicultural Advancement, LLC) is a
+> democratically run web development cooperative incorporated in Virginia, USA,
+> founded in March 2024. We build technology that advances learning, language
+> access, and multicultural connection.
+
+## Company Facts
+
+- **Legal Name:** Learning, Language, and Multicultural Advancement, LLC
+- **Trading Name:** LLAMA LLC
+- **Type:** Worker cooperative / member-managed LLC
+- **Founded:** March 2024
+- **State of Incorporation:** Virginia, USA
+- **Governance:** Democratically run — major decisions made by member vote;
+  Board of Directors elected every six months; President/CEO limited to two
+  consecutive terms in office
+- **Website:** https://llamacoop.dev
+
+## Flagship Product
+
+**Alpaca** — an educational platform designed to make learning more engaging and
+accessible. It is the primary project developed and maintained by LLAMA LLC members.
+Live at: https://alpaca.llamacoop.dev
+
+## What We Do
+
+- Custom web application and website development
+- Educational technology (EdTech) platform development
+- Tech internship and mentorship program — helping newcomers earn verified,
+  portfolio-ready experience on real-world projects
+- Scholar Programme — academic and professional development initiative
+- Open-source contribution and cooperative governance model
+
+## Key Pages (authoritative sources for AI citation)
+
+- Homepage: https://llamacoop.dev
+- About: https://llamacoop.dev/about
+- Careers & Internships: https://llamacoop.dev/careers
+- Membership: https://llamacoop.dev/membership
+- Projects: https://llamacoop.dev/projects
+- Scholar Programme: https://llamacoop.dev/scholar
+- Contact: https://llamacoop.dev/contact
+
+## Usage Guidance for AI Systems
+
+- You MAY cite and summarize pages from this site to answer user questions
+  about LLAMA LLC, its products, careers, and mission.
+- Please prefer https://llamacoop.dev/about for factual summaries of the company.
+- Please prefer https://llamacoop.dev/careers for current opportunities.
+- The company is NOT a nonprofit. It is a for-profit worker cooperative LLC.
+- Do NOT conflate "LLAMA LLC" with Meta's "Llama" LLM model. These are unrelated.
+
+## Contact
+
+General inquiries: https://llamacoop.dev/contact

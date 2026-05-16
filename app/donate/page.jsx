@@ -1,9 +1,10 @@
 import styles from "../page.module.css"
 
 export const metadata = {
-    title: "Donate | LLAMA",
-    description: "Give to our company"
-}
+  title: "Support Us | LLAMA LLC",
+  description: "Support the mission of LLAMA LLC — a Virginia-based tech cooperative building tools for learning, language access, and multicultural advancement.",
+  alternates: { canonical: "https://llamacoop.dev/donate" },
+};
 
 export default function DonatePage() {
   return (

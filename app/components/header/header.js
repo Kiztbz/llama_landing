@@ -12,7 +12,7 @@ function Profile() {
 export default function Header() {
   return (
     <header className="main header">
-      <a href="/careers" alt="Careers at LLAMA LLC"><Marquee text="🚀 Now Accepting Interns! Go to careers page to know more. 🔔" /></a>
+      <a href="/careers" alt="Careers at LLAMA LLC"><Marquee text="Now Accepting Interns — Visit our Careers page to apply" /></a>
       <div className="header-components">
       <Link href="/" className="logo">
         <Profile />
@@ -22,9 +22,9 @@ export default function Header() {
         <Link href="/membership">Membership</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
-        {/* <Link href="/join" className="cta-btn">
-          Join Us
-        </Link> */}
+        <Link href="/contact" className="cta-btn">
+          Get in Touch
+        </Link>
       </div>
       <HamburgerMenu />
       </div>

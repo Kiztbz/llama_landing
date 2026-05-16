@@ -5,31 +5,42 @@ import galleryImg from "@/public/images/alphy.jpg";
 export default function About_landing() {
   return (
     <div className="main about_landing">
-      <h2>What is LLAMA LLC?</h2>
+      <span className="about_label">About LLAMA LLC</span>
+      <h2>Learning, Language, and Multicultural Advancement</h2>
       <div className="about-content">
-      <p>
-        Turn knowledge into lasting memory. With Alpaca, you can capture notes,
-        organize ideas, and build custom quizzes—all in one place. Whether
-        you&apos;re studying, researching, or just learning for fun, Alpaca
-        helps you retain what matters most.Help us shape the future of learning.
-        You can support Alpaca by donating, contributing to our open-source
-        code, or designing courses. Every effort brings us closer to accessible,
-        community-driven education. Join our mission and leave a lasting impact
-        on learners everywhere.
-      </p>
-      <div className="about_gallery">
-        <Image
-          src={galleryImg}
-          layout="intrinsic"
-          alt="Alpaca interface"
-        />
-        <Image
-          src={galleryImg}
-          layout="intrinsic"
-          alt="Alpaca interface"
-        />
-      </div>
+        <p>
+          LLAMA LLC is a democratically run web development cooperative founded
+          in Virginia. Our flagship project, Alpaca, is a learning platform
+          designed to make education more engaging and accessible for everyone.
+          We believe in building tools that support lifelong learning, celebrate
+          linguistic diversity, and empower communities worldwide. Help us shape
+          the future of learning — through code, through design, or through your
+          ideas.
+        </p>
+        <div className="about_gallery">
+          <Image
+            src={galleryImg}
+            layout="intrinsic"
+            alt="LLAMA LLC alpaca mascot"
+            className="about_galleryImg"
+          />
+          <div className="about_accentCard">
+            <div className="about_accentRow">
+              <span className="about_accentStat">2024</span>
+              <span className="about_accentLabel">Founded, Virginia USA</span>
+            </div>
+            <div className="about_accentRow">
+              <span className="about_accentStat">100%</span>
+              <span className="about_accentLabel">Remote-First</span>
+            </div>
+            <div className="about_accentRow">
+              <span className="about_accentStat">Open</span>
+              <span className="about_accentLabel">Source Development</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+

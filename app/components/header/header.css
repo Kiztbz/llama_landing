@@ -4,74 +4,86 @@
     justify-content: space-between;
     width: 100%;
     margin: auto;
-    height: 100px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 8px rgba(15, 23, 42, 0.06);
 }
 
 .header-components {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 32px;
+    height: 72px;
 }
 
 .logo img {
     width: 100px;
-    height: 80px;
+    height: 72px;
 }
 
 .logo {
-    width: 30%;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 4px;
 }
 
 .nav-links a {
-    transition: 0.3s ease-in-out;
+    transition: background 0.15s, color 0.15s;
     font-weight: 600;
-    color: black;
-    margin: 0.5rem;
+    font-size: 0.875rem;
+    color: #374151;
+    padding: 8px 14px;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
 }
 
 .nav-links a:hover {
-    background-color: #0f172a;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
+    background: #f1f5f9;
+    color: #1e3a5f;
+    padding: 8px 14px;
 }
 
 .cta-btn {
-    background-color: #0f172a;
+    background: #1e3a5f;
     color: white !important;
-    padding: 10px 20px;
+    padding: 9px 20px !important;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 0.875rem;
+    transition: background 0.15s, box-shadow 0.15s !important;
+    letter-spacing: 0.3px;
 }
 
 .cta-btn:hover {
-    padding: 10px 30px !important;
+    background: #2563eb !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    padding: 9px 20px !important;
 }
 
 @media (max-width: 768px) {
-    .header {
-        height: 100px;
+    .header-components {
+        padding: 0 20px;
+        height: 64px;
     }
 
     .nav-links {
         display: none;
     }
 
-    .logo {
-        width: 100%;
-    }
-
     .logo img {
-        width: 180px;
-        height: 80px;
+        width: 140px;
+        height: 56px;
     }
 }

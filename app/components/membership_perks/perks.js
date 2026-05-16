@@ -5,16 +5,52 @@ import studentImg from "@/public/images/Student.svg";
 import designImg from "@/public/images/Responsive.svg";
 import moreImg from "@/public/images/More.svg";
 
-export default function Perks(){
-    return(
+const services = [
+  {
+    src: appImg,
+    alt: "Custom app development",
+    label: "Development",
+    desc: "Full-stack web applications built with modern technology and clean, maintainable code.",
+  },
+  {
+    src: studentImg,
+    alt: "Mentoring and tutoring",
+    label: "Mentoring",
+    desc: "Hands-on guidance for developers at every level — from first commit to production deploy.",
+  },
+  {
+    src: designImg,
+    alt: "Web and logo design",
+    label: "Design",
+    desc: "Brand identity and user interface design that communicates trust and clarity.",
+  },
+  {
+    src: moreImg,
+    alt: "Additional services",
+    label: "And More",
+    desc: "Consulting, technical writing, course creation — our expertise extends beyond the screen.",
+  },
+];
+
+export default function Perks() {
+  return (
     <div className="main membership-perks">
-        <h2>Our Services</h2>
-        <div className="perkcontainer">
-            <div className="perk"><Image src={appImg} alt="Custom app logo"></Image><h3>Development</h3></div>
-            <div className="perk"><Image src={studentImg} alt="mentoring and tutoring"></Image><h3>Mentoring</h3></div>
-            <div className="perk"><Image src={designImg} alt="website and logo design"></Image><h3>Design</h3></div>
-            <div className="perk"><Image src={moreImg} alt="More services"></Image><h3>More</h3></div>
-        </div>
+      <span className="perks_label">What We Offer</span>
+      <h2>Our Services</h2>
+      <p className="perks_sub">
+        From web development to mentorship, we deliver results that make a real difference.
+      </p>
+      <div className="perkcontainer">
+        {services.map((svc) => (
+          <div className="perk" key={svc.label}>
+            <div className="perk_icon">
+              <Image src={svc.src} alt={svc.alt} width={24} height={24} />
+            </div>
+            <h3>{svc.label}</h3>
+            <p className="perk_desc">{svc.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
-);
+  );
 } 

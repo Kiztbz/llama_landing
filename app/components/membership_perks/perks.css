@@ -1,66 +1,134 @@
 .membership-perks {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 65%;
-    margin: 0px auto;
+    width: 88%;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    gap: 16px;
 }
 
-.perkcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.perk {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem;
-    padding: 1rem;
-    width: 200px;
-    height: 200px;
-    background-color: #0f172a4b;
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    flex-direction: column;
-}
-
-.perk img{
-    filter: invert(100%);
-}
-
-.perk h3{
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 15px;
+.perks_label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #2563eb;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 4px;
+    padding: 4px 10px;
+    width: fit-content;
 }
 
 .membership-perks h2 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.3px;
 }
 
+.perks_sub {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 8px;
+}
+
+.perkcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.perk {
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.perk::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.perk:hover {
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.1);
+    border-color: #bfdbfe;
+    transform: translateY(-3px);
+}
+
+.perk:hover::before {
+    opacity: 1;
+}
+
+.perk_icon {
+    width: 44px;
+    height: 44px;
+    background: #eff6ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #bfdbfe;
+}
+
+.perk_icon img {
+    filter: none;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.perk h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.perk_desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.65;
+    font-weight: 400;
+    margin-top: 0;
+}
 
 @media (max-width: 1024px) {
-    .membership-perks{
+    .membership-perks {
         width: 100%;
+        padding: 0 24px;
     }
-    .perkcontainer{
-        display: grid;
+
+    .perkcontainer {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 30px;
     }
-    .perk{
-        flex-direction: row;
-        width: 150px;
-        height: 150px;
-        margin: 10px auto;
+
+    .perk {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perkcontainer {
+        grid-template-columns: 1fr 1fr;
     }
 }
